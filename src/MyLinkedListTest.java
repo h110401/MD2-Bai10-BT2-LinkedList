@@ -7,13 +7,16 @@ public class MyLinkedListTest {
         list.add(0, 2);
         list.add(0, 2);
         list.add(0, 2);
-        System.out.println("Hung bi ham");
 
-        list.print();
         MyLinkedList<Integer> list2 = list.clone();
 
         list.remove(5);
-        System.out.println(list.size());
-        System.out.println(list2.size());
+
+        list.print();
+
+        System.out.println();
+
+        list2.print();
+
     }
 }

@@ -114,9 +114,10 @@ public class MyLinkedList<E> {
     public void print() {
         Node temp = head;
         while (temp != null) {
-            System.out.println(temp.getData());
+            System.out.print(temp.getData() + " ");
             temp = temp.next;
         }
+        System.out.println();
     }
 
 }
