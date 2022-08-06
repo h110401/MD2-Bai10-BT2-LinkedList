@@ -23,6 +23,10 @@ public class MyLinkedList<E> {
 
     public void add(int index, E e) {
         if (index >= numNodes) throw new ArrayIndexOutOfBoundsException("Index out of bounds");
+        if (index == 0) {
+            addFirst(e);
+            return;
+        }
         Node temp = head;
         Node holder;
         for (int i = 0; i < index - 1; i++) {
@@ -106,4 +110,13 @@ public class MyLinkedList<E> {
         }
         return -1;
     }
+
+    public void print() {
+        Node temp = head;
+        while (temp != null) {
+            System.out.println(temp.getData());
+            temp = temp.next;
+        }
+    }
+
 }

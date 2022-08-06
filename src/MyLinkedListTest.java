@@ -1,14 +1,15 @@
 public class MyLinkedListTest {
     public static void main(String[] args) {
-        MyLinkedList<Integer> list = new MyLinkedList<>(1);
+        MyLinkedList<Integer> list = new MyLinkedList<>(10);
 
         list.add(0, 2);
         list.add(0, 2);
         list.add(0, 2);
         list.add(0, 2);
         list.add(0, 2);
+        System.out.println("Hung bi ham");
 
-
+        list.print();
         MyLinkedList<Integer> list2 = list.clone();
 
         list.remove(5);
